@@ -44,7 +44,3 @@ function Decrease(){
         }
     }
 }
-
-function Change(){
-    alert('asd');
-}
