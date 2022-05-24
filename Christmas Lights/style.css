@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(29, 26, 29)
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 20px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:  both ;
+    animation-play-state:running;
+}
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+#lights{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#buttons{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(29, 26, 29);
+    padding: 9px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color:rgb(93, 208, 139);
+    border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0px 20px;
+}
+
+button:hover{
+    background-color: rgb(93, 208, 139);
+}
+
+.first{
+    background-color: rgba(255, 0, 0, 0.3);
+    animation-name: first-light;
+}             
+
+@keyframes first-light{
+    0.1%, 100%{
+        background-color: rgba(255, 0, 0, 1);
+        box-shadow: 0px 2px 20px 10px rgba(255, 0, 0, 1);
+    }
+    50%{
+        background-color: rgba(255, 0, 0, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255, 0, 0, 0.3);
+    }
+}
+
+.second{
+    background-color: rgba(197, 131, 31, 0.3);
+    animation-name: second-light;
+}
+
+@keyframes second-light{
+    50%{
+        background-color: rgba(197, 131, 31, 1);
+        box-shadow: 0px 2px 20px 10px rgba(197, 131, 31, 1);
+    }
+    0.1%, 100%{
+        background-color: rgba(197, 131, 31, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(197, 131, 31, 0.3);
+    }
+}
+
+.third{
+    background-color:rgba(255, 255, 0, 0.3);
+    animation-name: third-light;
+}
+
+@keyframes third-light{
+    0.1%, 100%{
+        background-color: rgba(255, 255, 0, 1);
+        box-shadow: 0px 2px 20px 10px rgba(255, 255, 0, 1);
+    }
+    50%{
+        background-color: rgba(255, 255, 0, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255, 255, 0, 0.3);
+    }
+}
+
+.fourth{
+    background-color: rgba(0, 128, 0, 0.3);
+    animation-name: fourth-light;
+}
+
+@keyframes fourth-light{
+    50%{
+        background-color: rgba(0, 128, 0, 1);
+        box-shadow: 0px 2px 20px 10px rgba(0, 128, 0, 1);
+    }
+    0.1%, 100%{
+        background-color: rgba(0, 128, 0, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(0, 128, 0, 0.3);
+    }
+}
+
+.fifth{
+    background-color: rgba(0, 0, 255, 0.3);
+    animation-name: fifth-light;
+}
+
+@keyframes fifth-light{
+    0.1%, 100%{
+        background-color: rgba(0, 0, 255, 1);
+        box-shadow: 0px 2px 20px 10px rgba(0, 0, 255, 1);
+    }
+    50%{
+        background-color: rgba(0, 0, 255, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(0, 0, 255, 0.3);
+    }
+}
+
+.sixth{
+    background-color: rgba(0, 0, 139, 0.3);
+    animation-name: sixth-light;
+}
+
+@keyframes sixth-light{
+    50%{
+        background-color: rgba(0, 0, 139, 1);
+        box-shadow: 0px 2px 20px 10px rgba(0, 0, 139, 1);
+    }
+    0.1%, 100%{
+        background-color: rgba(0, 0, 139, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(0, 0, 139, 0.3);
+    }
+}
+
+.seventh{
+    background-color: rgba(128, 0, 128, 0.3);
+    animation-name: seventh-light;
+}
+
+@keyframes seventh-light{
+    0.1%, 100%{
+        background-color: rgba(128, 0, 128, 1);
+        box-shadow: 0px 2px 20px 10px rgba(128, 0, 128, 1);
+    }
+    50%{
+        background-color: rgba(128, 0, 128, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(128, 0, 128, 0.3);
+    }
+}
