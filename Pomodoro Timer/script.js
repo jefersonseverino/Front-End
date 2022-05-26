@@ -9,7 +9,7 @@ reset.addEventListener('click', Reset);
 change_time.addEventListener('click', ChangeFocusTime);
 
 var timer, focus_time_min = 25, focus_time_sec = 0, Break = false, break_time_min = 5, break_time_sec = 0;
-var min = focus_time_min, sec = focus_time_sec;
+var min = focus_time_min, sec = focus_time_sec, breaks = 0;
 var audio = new Audio('alarm.mp3');
 
 PrintTime();
@@ -28,6 +28,8 @@ function Start(){
                 document.getElementById('title').innerHTML = 'Break Time';
                 min = break_time_min;
                 sec = break_time_sec;
+                if(breaks % 4 == 0) min += 5;
+                breaks++;
             }else{
                 document.getElementById('title').innerHTML = 'Focus Time';
                 min = focus_time_min;
