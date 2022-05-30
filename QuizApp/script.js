@@ -8,7 +8,8 @@ let anime = {
             "difficulty":"medium",
             "question":"The heroine of &quot;Humanity Has Declined&quot; is a mediator between humans and what?",
             "correct_answer":"Fairies",
-            "incorrect_answers":["Elves","The Earth","Animals"]},
+            "incorrect_answers":["Elves","The Earth","Animals"],
+            "answers":["Elves","The Earth","Fairies","Animals"]},
         {
             "category":"Entertainment: Japanese Anime & Manga",
             "type":"multiple",
@@ -46,11 +47,42 @@ let anime = {
 let question = 1;
 let correct_answers = 0;
 let total_questions = anime.results.length;
+let selected = false;
+
+let option_a = document.getElementById('a');
+let option_b = document.getElementById('b');
+let option_c = document.getElementById('c');
+let option_d = document.getElementById('d');
+let next = document.getElementById('check');
+
+next.addEventListener('click', Next);
+
+option_a.addEventListener('click', Check);
+option_b.addEventListener('click', Check);
+option_c.addEventListener('click', Check);
+option_d.addEventListener('click', Check);
 
 
 document.getElementById('question-title').innerHTML = "Question " + question + "/" + total_questions;
-document.getElementById('question-statement').innerHTML = question + ") " + anime.results[question].question;
+document.getElementById('question-statement').innerHTML = question + ") " + anime.results[question - 1].question;
 
-for(let i = 0;i < total_questions;i++){
-    document.getElementById('a' + i).innerHTML = ''+anime.results[question].type;
+for(let i = 1;i <= 4;i++){
+   document.getElementById('option-'+i).innerHTML = anime.results[question - 1].answers[i - 1];
+}
+
+function Next(){
+    if(!selected){
+        alert("Select an answer");
+    }else{
+        question++;
+
+        document.getElementById('question-title').innerHTML = "Question " + question + "/" + total_questions;
+        document.getElementById('question-statement').innerHTML = question + ") " + anime.results[question - 1].question;
+
+        for(let i = 1;i <= 4;i++){
+
+            document.getElementById('option-'+i).innerHTML = anime.results[question - 1].answers[i - 1];
+
+        }
+    }
 }
