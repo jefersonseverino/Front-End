@@ -25,7 +25,7 @@ let anime = {
             "question":"In &quot;JoJo&#039;s Bizarre Adventure&quot;, which of the following Stands does NOT have a time-based ability?",
             "correct_answer":"20th Century Boys",
             "incorrect_answers":["Made in Heaven","Star Platinum","The World"],
-            "answers":["The World","20th Century boys","Made in Heaven","Start Platinum"]},
+            "answers":["The World","20th Century Boys","Made in Heaven","Start Platinum"]},
         {
             "category":"Entertainment: Japanese Anime & Manga",
             "type":"multiple",
@@ -50,16 +50,26 @@ let anime = {
 
 let question = 1;
 let correct_answers = 0;
+let sec = 0;
 let total_questions = anime.results.length;
 let selected = false;
 let correct_answer =  anime.results[question - 1].correct_answer;
-console.log(correct_answer);
 
+let start = document.getElementById('start-game');
+let restart = document.getElementById('restart-button');
 let option_a = document.getElementById('a');
 let option_b = document.getElementById('b');
 let option_c = document.getElementById('c');
 let option_d = document.getElementById('d');
 let next = document.getElementById('check');
+let restart_screen = document.getElementById('restart');
+let start_screen = document.getElementById('start');
+let statement = document.getElementById('problem');
+let options = document.getElementsByClassName('options');
+
+
+start.addEventListener('click', Start);
+restart.addEventListener('click', Restart);
 
 option_a.addEventListener('click', Check_a);
 option_b.addEventListener('click', Check_b);
@@ -74,9 +84,17 @@ for(let i = 1;i <= 4;i++){
    document.getElementById('option-'+i).innerHTML = anime.results[question - 1].answers[i - 1];
 }
 
+function Start(){
+    start_screen.style.display = "none";
+    statement.style.display = "block";
+    for(let i = 0;i < options.length;i++){
+        options[i].style.display = "block";
+    }
+}
+
+
 function Next(){
     question++;
-
     if(question > 5){
         Final();
     }else{
@@ -90,8 +108,7 @@ function Next(){
     }
 }
 
-function Check_a(){
-    console.log(anime.results[question - 1].answers[0]);
+function Check_a(e){
     if(correct_answer == anime.results[question - 1].answers[0]) correct_answers++;
     Next();
 }
@@ -113,11 +130,25 @@ function Check_d(){
 
 function Final(){
     document.getElementById('question-title').innerHTML = 'Score = ' + correct_answers + '/' + total_questions;
-
     if(correct_answers > 2){
         document.getElementById('question-statement').innerHTML = 'You have been aproved!'
     }else{
-        document.getElementById('question-statement').innerHTML = 'You have failed!'
+        document.getElementById('question-statement').innerHTML = 'You have failed! The minimum score to be approved is 3/5.'
     }
 
+    for(let i = 0;i < options.length;i++){
+        options[i].style.display = "none";
+    }
+    restart_screen.style.display = "block";
+
+
+}
+
+function Restart(){
+    question = 0;
+    correct_answers = 0;
+    statement.style.display = "none";
+    start_screen.style.display = "block";
+    restart_screen.style.display = "none";
+    Next();
 }
