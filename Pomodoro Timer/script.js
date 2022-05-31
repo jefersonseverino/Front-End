@@ -72,5 +72,6 @@ function PrintTime(){
 function ChangeFocusTime(){
     let new_time = document.getElementById('focus_time').value;
     min = new_time;
+    focus_time_min = new_time;
     PrintTime();
 }
