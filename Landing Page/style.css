@@ -1,0 +1,199 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    background-color: #333;
+    text-align: center;
+    overflow: hidden;
+}
+
+img{
+    width: 95%;
+    max-width: 350px;
+    height: auto;
+}
+
+.columns{
+    background-color: #007ece;
+    text-align: center;
+}
+
+.column{
+    display: inline-block;
+    width: 15%;
+    height: 180px;
+    max-width: 250px;
+    color: white;
+    margin: 60px auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.column:hover{
+    background-color: #27afff;
+}
+
+.column-text{
+    word-wrap: break-word;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.product-use{
+    background-color: #27a4f4;
+    color: white;
+    text-align: center;
+    padding: 70px;
+}
+
+#use-title{
+    margin-bottom: 20px;   
+}
+
+#use-description{
+    width: 50%;
+    margin: auto;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.product-review{
+    background-color: rgba(0, 126, 206, 0.1);
+    color: #1c262b;
+    text-align: center;
+    padding: 50px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#review-author{
+    margin-top: 15px;
+}
+
+#review{
+    font-size: 1.7em;
+}
+
+.product-reasons{
+    background-color: #007ece;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+.reasons{
+    display: inline-block;
+    width: 15%;
+}
+
+#reason-title{
+    margin-bottom: 20px;
+}
+
+.offer{
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#offer-link{
+    margin-bottom: 50px;
+}
+
+.bottom{
+    background-color: #2d2b2a;
+    height: 150px;
+    overflow: hidden;
+}
+
+.bottom-text{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.links{
+    text-align: center;
+    color: rgb(255,255,255,0.75);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.product-info{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.product-image{
+    display: inline-block;
+    max-width: 40%;
+}
+
+.details{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 55%;
+    justify-content: center;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+#detail{
+    color: black;
+    justify-content: left;
+    font-size: 1em;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: white;
+    margin: 2.5em auto 0.8em auto;
+    width: 600px;
+    font-size: 3em;
+}
+
+h2{
+    color: white;
+}
+
+a{
+    background-color: #007ece;
+    padding: 15px;
+    display: inline-block;
+    margin: 2.2em auto 5em auto;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: #007fff;
+}
+
+h3{
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+i{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+li{
+    text-align: justify;
+    font-size: 18px;
+}
+
+span{
+    margin-left: 15px;
+}
+
+span:hover{
+    color: rgb(255,255,255,0.95);
+}
