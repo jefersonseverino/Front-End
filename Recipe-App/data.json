@@ -1,0 +1,17 @@
+[
+    {
+        "recipeTitle" : "Salad", 
+        "mealType" : "Lunch",
+        "numberOfPeople" : 4,
+        "level" : "Easy",
+        "listOfIngredients": ["Tomato", "Onion", "Lettuce", "Salt"],
+        "preparationSteps" : "Cut the vegetables and add salt"
+    },{
+        "recipeTitle" : "Pasta", 
+        "mealType" : "Dinner",
+        "numberOfPeople" : 4,
+        "level" : "Easy",
+        "listOfIngredients": ["Pasta", "Tomato Sauce"],
+        "preparationSteps" : "Put the sauce on the pasta and cook"
+    }
+]
