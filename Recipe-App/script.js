@@ -26,9 +26,7 @@ async function renderData(){
             <a class="link">Open Recipe</a>
         `
     }
-
 }
-
 
 renderData();
 
