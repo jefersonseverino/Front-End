@@ -1,5 +1,5 @@
 var images = document.querySelectorAll(".image");
-var unknow = document.querySelectorAll(".nsei");
+var unknow = document.querySelectorAll(".unknow");
 var totalMoves = document.querySelector(".moves");
 var time = document.querySelector(".time");
 var restart = document.querySelector(".fa-rotate-right");
@@ -11,8 +11,6 @@ var moves = 0;
 var minutes = 0;
 var seconds = 0;
 var correctGuesses = 0;
-
-const delay = ms => new Promise(res => setTimeout(res, ms));
 
 for(let i = 1;i <= (images.length)/2;i++){
     eachImageCount = 0;
