@@ -1,0 +1,55 @@
+#calculator{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+}
+
+.numbers, .operations{
+    pointer-events: none;
+    display: inline-block;
+}
+
+button{
+    pointer-events: auto;
+    padding: 15px 20px;
+    border-color: gray;
+    border: 10px;
+    margin: 2px;
+}
+
+button:hover, input:hover{
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+#screen{
+    padding: 15px;
+    display: block;
+    border-style: groove;
+    margin:auto;
+    width: 175px;
+    height: 20px;
+    text-align: right;
+}
+
+#op1, #op2, #op3, #op4{
+    background-color: gray;
+    color: aliceblue;
+    pointer-events: auto;
+}
+
+.equal{
+    display: inline-block;
+    position: relative;
+    bottom: 74px;
+}
+
+#solve{
+    background-color: #2596be;
+    border: 10px;
+    color: white;
+    padding: 89px 18px;
+}
