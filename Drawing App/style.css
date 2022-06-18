@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar{
+    background-color: #333;
+    color: white;
+}
+
+.bar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.bar li{
+    text-align: center;
+}
+
+.bar button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border:none;
+    font-size: 19px;
+}

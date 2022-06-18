@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bar">
+
+        <ul>
+            <li>
+                <h3 class="option">Color</h3>
+                <input type="color" id="color">
+            </li>
+            <li>
+                <h3 class="option">Stroke</h3>
+                <input type="number" id="weight" min="2" max="10" value="2">
+            </li>
+            <li>
+                <h3 class="option">Rectangle</h3>
+                <input type="checkbox" id="rectangle">
+            </li>
+            <li>
+                <button id="clear">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div class="board">
+        <canvas id="drawing-board"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3c77b6226b.js" crossorigin="anonymous"></script>
+</body>
+</html>
